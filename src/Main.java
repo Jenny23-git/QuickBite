@@ -41,11 +41,11 @@ public class Main {
             System.out.println(Arrays.toString(itemName));
 
             itemPrice = Arrays.copyOf(itemPrice, itemName.length+1);
-            itemPrice[itemPrice.length-1] = name;
+            itemPrice[itemPrice.length-1] = price;
             System.out.println(Arrays.toString(itemPrice));
 
             itemAvailable = Arrays.copyOf(itemAvailable, itemAvailable.length+1);
-            itemName[itemAvailable.length-1] = name;
+            itemAvailable[itemAvailable.length-1] = status;
             System.out.println(Arrays.toString(itemAvailable));
 
         } while  (true);
