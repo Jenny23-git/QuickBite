@@ -56,18 +56,29 @@ public class Main {
             // sold out or available
 
 
-            String check =null;
+            String check = null;
 
             if (itemAvailable[i] == true) {
                 check = "Available";
 
-            }else {
+            } else {
                 check = "Sold out";
             }
             System.out.println(itemName[i] + " " + itemPrice[i] + " " + check);
-
-
-
         }
+            // linear search by item name
+            for (int i = 0; i < itemName.length; i++) {
+                System.out.println("Enter the item name:__");
+                String serachTerm = in.next();
+
+                if (itemName[i].equalsIgnoreCase(serachTerm)) {
+                    System.out.println(itemName[i] + "\t" +itemPrice[i]+ "\t" +itemAvailable);
+                } else {
+                    System.out.println(serachTerm+ "not found.");
+                }
+
+
+            }
+
     }
 }
