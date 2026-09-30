@@ -67,17 +67,14 @@ public class Main {
             System.out.println(itemName[i] + " " + itemPrice[i] + " " + check);
         }
             // linear search by item name
-            for (int i = 0; i < itemName.length; i++) {
-                System.out.println("Enter the item name:__");
-                String serachTerm = in.next();
-
-                if (itemName[i].equalsIgnoreCase(serachTerm)) {
-                    System.out.println(itemName[i] + "\t" +itemPrice[i]+ "\t" +itemAvailable);
-                } else {
-                    System.out.println(serachTerm+ "not found.");
-                }
-
-
+            int index = findItemIndexByName(itemName, "Bananas");
+        System.out.println(index);
+           // item is found
+        if (index == -1){
+            System.out.println("Item not found!");
+        } else{
+            System.out.println("Item is at index: " +index+ " - ");
+        }
             }
 
     }
