@@ -2,6 +2,21 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
+
+    public static int findItemIndexByName(String[] names, String query ) {
+        // look-up for item name
+        for (int i = 0; i < names.length; i++) {
+            if (names[i].equalsIgnoreCase(query)) {
+                return i;
+            }
+        }
+        // done searching
+        return -1;
+    }
+        //the name is found
+        // or the name is found
+
+
     public static void main(String[] args) {
         // QuickBite Munchee Bus
         /*
